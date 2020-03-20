@@ -226,4 +226,7 @@ http://ionicframework.com/docs/theming/ */
   ion-title.title-large {
     --color: white;
   }
+
+  ion-menu.a{    display: none;    }
+  ion-menu.b{    display: block;   }
 }

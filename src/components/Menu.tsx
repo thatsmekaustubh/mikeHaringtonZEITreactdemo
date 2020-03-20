@@ -61,15 +61,27 @@ const appPages: AppPage[] = [
     url: '/page/Spam',
     iosIcon: warningOutline,
     mdIcon: warningSharp
+  },
+  {
+    title: 'Login2',
+    url: '/page/Login2',
+    iosIcon: warningOutline,
+    mdIcon: warningSharp
+  },
+  {
+    title: '/Login',
+    url: '/Login',
+    iosIcon: warningOutline,
+    mdIcon: warningSharp
   }
 ];
 
 const labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
 const Menu: React.FunctionComponent<MenuProps> = ({ selectedPage }) => {
-
+  console.log(selectedPage);
   return (
-    <IonMenu contentId="main" type="overlay">
+    <IonMenu contentId="main" type="overlay" class={ selectedPage === "/LoginPage" ? "a" : "b" }>
       <IonContent>
         <IonList id="inbox-list">
           <IonListHeader>Inbox</IonListHeader>
